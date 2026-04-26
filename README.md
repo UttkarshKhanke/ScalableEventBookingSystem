@@ -1,4 +1,4 @@
-SYSTEM ARCHITECTURE
+🧠1. SYSTEM ARCHITECTURE
 
 Client (React / Postman)
         ↓
@@ -9,3 +9,14 @@ Database (PostgreSQL)
 Cache (Redis)
         ↓
 Queue (Kafka / RabbitMQ)
+
+---------------------------------
+
+⚙️ 2. TECH STACK
+
+Backend: Java + Spring Boot
+Database: PostgreSQL
+Cache: Redis
+Queue: Kafka (or RabbitMQ if simpler)
+Deployment: Docker + AWS / Render
+
