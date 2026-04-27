@@ -45,3 +45,31 @@ bookings
 👉 Key idea:
 
 Each seat = one row (don’t store as JSON)
+
+🟡 Phase 2 – Concurrency (MOST IMPORTANT 🔥) (Week 3–4)
+
+This is where your project becomes interview gold
+
+❗ Problem:
+
+Two users try booking the same seat
+
+✅ Solution 1: Optimistic Locking
+
+Add version column:
+
+version INT
+
+Flow:
+
+Read seat
+Try update with same version
+If version changed → retry
+✅ Solution 2: Pessimistic Locking (Better for demo)
+SELECT * FROM seats WHERE id=101 FOR UPDATE;
+
+👉 Locks seat until transaction completes
+
+✅ BEST APPROACH (Real-world)
+Lock seat for 5 minutes
+If payment fails → release
