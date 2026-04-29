@@ -73,3 +73,12 @@ SELECT * FROM seats WHERE id=101 FOR UPDATE;
 ✅ BEST APPROACH (Real-world)
 Lock seat for 5 minutes
 If payment fails → release
+
+🔵 Phase 3 – Redis + Performance (Week 5–6)
+Add Redis for:
+Caching event list
+Seat availability
+Example:
+GET /events → Redis → DB (if miss)
+🔥 Add TTL:
+Seat lock expires automatically
