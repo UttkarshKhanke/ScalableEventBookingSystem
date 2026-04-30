@@ -102,3 +102,9 @@ Load simulation (use JMeter)
 Metrics:
 Response time
 Requests/sec
+
+🟤 Phase 6 – Production Ready (Week 8)
+Must include:
+Dockerfile
+Logging (use Logback / Winston)
+Deployment (AWS / Render)
