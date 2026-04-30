@@ -94,3 +94,11 @@ Flow:
 User books → API → Queue → Worker → DB update
 
 👉 This shows asynchronous architecture
+
+🔴 Phase 5 – Scale Concepts (Week 7)
+Add:
+Rate limiting (important!)
+Load simulation (use JMeter)
+Metrics:
+Response time
+Requests/sec
