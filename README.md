@@ -82,3 +82,15 @@ Example:
 GET /events → Redis → DB (if miss)
 🔥 Add TTL:
 Seat lock expires automatically
+
+🟣 Phase 4 – Queue System (Kafka/RabbitMQ)
+
+Use queue for:
+
+Booking confirmation
+Email simulation
+Payment processing
+Flow:
+User books → API → Queue → Worker → DB update
+
+👉 This shows asynchronous architecture
